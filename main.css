@@ -13,7 +13,6 @@
     rgba(150, 148, 233, 1) 0%,
     rgba(238, 174, 202, 1) 97%
   );
-  color: #ffffff;
 }
 .header {
   display: flex;
@@ -65,6 +64,7 @@
   gap: 30px;
   align-items: center;
   font-size: 1.2rem;
+  color: #ffffff;
 }
 .pokemon_detail > img {
   height: 250px;
@@ -73,6 +73,7 @@
   text-transform: capitalize;
   font-weight: 600;
   font-size: 2.5rem;
+  color: #ffffff;
 }
 .pokemon_detail > button {
   width: 40px;
