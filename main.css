@@ -18,7 +18,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
   font-size: 2.5rem;
 }
 .main {
@@ -46,6 +45,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .pokemon {
   display: flex;
