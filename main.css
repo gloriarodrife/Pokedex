@@ -52,6 +52,7 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  height: 120px;
 }
 .pokemon > span {
   text-transform: capitalize;
