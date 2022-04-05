@@ -9,11 +9,13 @@ async function getPokemons() {
   const data = await response.json();
   return data;
 }
+
 async function getPokemon(pokemon) {
   const response = await fetch(pokemon.url);
   const data = await response.json();
   return data;
 }
+
 function getPokemonImage(index) {
   return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index}.png`;
 }
@@ -61,9 +63,32 @@ async function renderPokemons() {
   // await = esperar respuesta de la promesa
   const pokemonsResponse = await getPokemons();
   const pokemons = pokemonsResponse.results;
+  // For Each ejecuta la function, por eso no lleva ()
+  // El callback del forEach tiene los dos parametros que definimos en la funcion
   pokemons.forEach(renderPokemon);
 }
 
-await renderPokemons();
-
-// buttonElement.addEventListener('click', () => {});
+async function initApp() {
+  await renderPokemons();
+}
+initApp();
+searchButton.addEventListener('click', async (event) => {
+  event.preventDefault();
+  const pokemonsResponse = await getPokemons();
+  const pokemons = pokemonsResponse.results;
+  for (const pokemon of pokemons) {
+    if (pokemon.name === searchInput.value) {
+      console.log(pokemon);
+      // const li = document.createElement('li');
+      // li.classList.add('pokemon');
+      // const img = document.createElement('img');
+      // const span = document.createElement('span');
+      // img.src = getPokemonImage(pokemonIndex);
+      // span.innerText = pokemon.name;
+      // li.appendChild(img);
+      // li.appendChild(span);
+      // pokemonList.appendChild(li);
+      // pokemonList.innerHTML = pokemon;
+    }
+  }
+});

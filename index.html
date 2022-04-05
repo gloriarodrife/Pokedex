@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokedex</title>
+    <title>Pokédex</title>
+    <link rel="icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body class="body">
     <header class="header">
-      <h1 class="header__title">Pokedex</h1>
+      <section class="search_section">
+        <h1 class="header__title">Pokédex</h1>
+        <section>
+          <form action="" class="js_form">
+            <input class="input" type="text" name="search" />
+            <input class="button" type="submit" value="Search" />
+            <input class="button" type="reset" value="Reset" />
+          </form>
+        </section>
+      </section>
     </header>
     <main class="main">
       <section>
@@ -17,6 +27,7 @@
         <div class="js_pokemon_detail pokemon_detail hidden"></div>
       </section>
     </main>
-    <script type="module" src="./main.js"></script>
+    <!-- <script type="module" src="./main.js"></script> -->
+    <script type="module" src="./main2.js"></script>
   </body>
 </html>
