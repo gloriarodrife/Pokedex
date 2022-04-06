@@ -145,8 +145,12 @@ async function startApplication() {
   formElement.addEventListener('submit', renderFilteredList);
   formElement.addEventListener('reset', () => {
     pokemonList.innerHTML = '';
+
     // Renderizamos toda la lista
     renderList(list);
+
+    pokemonDetail.classList.add('hidden');
+    pokemonList.classList.remove('hidden');
   });
 }
 

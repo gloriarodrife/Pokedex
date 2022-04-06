@@ -42,18 +42,7 @@
   flex-direction: column;
   gap: 30px;
 }
-/* .section__search {
-  display: flex;
-  gap: 30px;
-} */
-/* .main__input {
-  height: 30px;
-}
 
-.main__button {
-  height: 30px;
-  width: 120px;
-} */
 .hidden {
   display: none !important;
 }
@@ -105,6 +94,9 @@
   border-style: none;
   color: #5553c3;
   cursor: pointer;
+}
+.pokemon_detail > p {
+  text-align: center;
 }
 .footer {
   display: flex;
