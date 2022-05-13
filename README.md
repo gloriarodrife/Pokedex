@@ -4,8 +4,8 @@ Página web desarrollada con HTML, CSS y JS con un listado de pokemons obtenidos
 
 Para probarlo haz click [aquí](https://gloriarodrife.github.io/Pokedex/) y verás la página en funcionamiento.
 
-![image](src/images/page.png)
-![image](src/images/detail.png)
+![image](images/page.png)
+![image](images/detail.png)
 
 ## Autora: :woman_technologist:
 
