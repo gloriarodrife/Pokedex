@@ -7,6 +7,5 @@ Para probarlo haz click [aquí](https://gloriarodrife.github.io/Pokedex/) y ver�
 ![image](images/page.png)
 ![image](images/detail.png)
 
-## Autora: :woman_technologist:
 
-Futura junior frontend developer **Gloria Rodríguez Fernández** [Github](https://github.com/gloriarodrife)
+
